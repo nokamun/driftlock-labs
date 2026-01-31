@@ -1,6 +1,6 @@
 # driftlock-labs
 
-Public reference labs, artifacts, and governance patterns exploring cloud-native policy engineering, cloud governance, and DriftLock design patterns.
+Public reference exploration labs, artifacts, and governance patterns exploring cloud-native policy engineering, cloud governance, and DriftLock design patterns.
 
 ---
 
@@ -75,7 +75,7 @@ The framework is applied across cloud platforms, Kubernetes environments, and CI
 
 ## About the Architect
 
-This repository reflects the work and thinking of **Wynoks Munlyn**, architect of the DriftLock framework.
+This repository reflects the work and thinking of **Wynoka Munlyn**, architect of the DriftLock framework.
 
 The artifacts here represent ongoing exploration and applied practice in:
 - cloud governance,
@@ -86,7 +86,7 @@ The artifacts here represent ongoing exploration and applied practice in:
 
 ## Trademark Notice
 
-**DriftLock™** is a trademark of Wynoka Munlyn.
+**DriftLock™** is a trademark of DriftLock Development created by Wynoka Munlyn.
 
 Use of the DriftLock name or references in this repository does not grant permission to use the trademark in derivative works, commercial offerings, or branding without explicit authorization.
 
