@@ -1,0 +1,7 @@
+pyyaml>=6.0
+ruamel.yaml>=0.17
+jsonschema>=4.20
+rich>=13.7
+pathspec>=0.11
+jmespath>=1.0
+kubernetes>=29.0.0
