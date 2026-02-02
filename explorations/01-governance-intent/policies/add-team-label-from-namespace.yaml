@@ -10,8 +10,12 @@ spec:
           - resources:
               kinds:
                 - Pod
+      context:
+        - name: ns
+          apiCall:
+            urlPath: "/api/v1/namespaces/{{request.namespace}}"
       mutate:
         patchStrategicMerge:
           metadata:
             labels:
-              team: "{{ request.namespace | lookup('v1', 'Namespace', @, @).metadata.labels.team }}"
+              team: "{{ ns.metadata.labels.team }}"
