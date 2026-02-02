@@ -1,0 +1,17 @@
+apiVersion: kyverno.io/v1
+kind: ClusterPolicy
+metadata:
+  name: add-team-label-from-namespace
+spec:
+  rules:
+    - name: copy-team-label-from-namespace
+      match:
+        any:
+          - resources:
+              kinds:
+                - Pod
+      mutate:
+        patchStrategicMerge:
+          metadata:
+            labels:
+              team: "{{ request.namespace | lookup('v1', 'Namespace', @, @).metadata.labels.team }}"
