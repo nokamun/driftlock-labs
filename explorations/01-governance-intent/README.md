@@ -103,35 +103,12 @@ These tradeoffs are acknowledged but not resolved here.
 
 ---
 
-## Resulting State
+## Evidence (Local Validation)
 
-At the conclusion of this exploration:
+Validated in a local kind cluster (`kind-driftlock-explorations`) with Kyverno admission control enabled.
 
-- Ownership is defined as a governance requirement
-- The boundary of responsibility is explicit
-- The source of truth for ownership is established
-- Policy expression can proceed without ambiguity
+Evidence observed via:
 
-Here, we produced **clarity**. Not controls.
+```bash
+kubectl -n platform get pods --show-labels
 
----
-
-## Forward Path
-
-Future explorations may introduce:
-- Policy expression of ownership intent
-- Validation or mutation mechanisms
-- Exception handling models
-- Operational feedback and evidence
-
-Those steps build on this decision rather than redefining it.
-
----
-
-## Exploration Notes
-
-This exploration intentionally avoids implementation detail.
-
-Its purpose is to demonstrate how governance intent is articulated before tools are applied.
-
-Clear decisions precede effective enforcement.
